@@ -44,6 +44,7 @@ input[type="submit"]:hover {
   background-color: transparent;
   -webkit-transition: 2s;
   transition: 2s;
+  outline: none;
 }
 
 input[type="submit"]:focus {
@@ -53,6 +54,7 @@ input[type="submit"]:focus {
   background-color: transparent;
   -webkit-transition: 2s;
   transition: 2s;
+  outline: none;
 }
 
 button {
@@ -67,6 +69,7 @@ button:hover {
   background-color: transparent;
   -webkit-transition: 2s;
   transition: 2s;
+  outline: none;
 }
 
 button:focus {
@@ -76,6 +79,7 @@ button:focus {
   background-color: transparent;
   -webkit-transition: 2s;
   transition: 2s;
+  outline: none;
 }
 
 .btn-primary {
