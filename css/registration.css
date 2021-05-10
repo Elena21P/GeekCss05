@@ -1,0 +1,99 @@
+.reg__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  min-width: 360px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form-reg * {
+  margin: 10px;
+}
+
+.form-reg label {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.form-reg .gender-radio label {
+  font-size: 13px;
+}
+
+.form-reg .pass-note {
+  color: #b1b1b1;
+}
+
+.form-reg .form-actions {
+  padding: 0;
+  margin: 0;
+}
+
+.form-reg button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.form-reg button svg {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.perks__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  padding-left: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.perks__container ul {
+  list-style: none;
+}
+
+.perks__container ul li {
+  margin-top: 10px;
+}
+
+li {
+  position: relative;
+}
+
+ul li:before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background: url("../img/list-item.svg") no-repeat;
+  margin-left: -40px;
+}
+/*# sourceMappingURL=registration.css.map */

@@ -27,7 +27,7 @@ $font-stack: Lato;
   left: 0;
   z-index: 99;
   .container {
-    padding: 18px;
+    padding: 10px;
     @include flex-space-between;
   }
   .header__logo {
@@ -68,7 +68,7 @@ $font-stack: Lato;
 }
 
 .header__page {
-  margin-top: 70px;
+  margin-top: 80px;
   background-color: $background-color-light;
   padding: 50px;
   color: $color-primary;

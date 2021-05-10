@@ -8,7 +8,7 @@
 }
 
 .header__top .container {
-  padding: 18px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +74,7 @@
 }
 
 .header__page {
-  margin-top: 70px;
+  margin-top: 80px;
   background-color: #f8f3f4;
   padding: 50px;
   color: #f16d7f;
