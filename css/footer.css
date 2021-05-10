@@ -36,6 +36,13 @@
   margin: 20px 100px 0 100px;
 }
 
+.subscribe__info img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
 .subscribe__enter {
   -ms-grid-column: 2;
   grid-column: 2 / 2;

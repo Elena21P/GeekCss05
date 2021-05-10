@@ -34,6 +34,10 @@ $font-stack: Lato;
     font-weight: normal;
     margin: 20px 100px 0 100px;
   }
+  img:hover {
+    transform: scale(1.5);
+    transition-duration: 2s;
+  }
 }
 .subscribe__enter {
   grid-column: 2 / 2;

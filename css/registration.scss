@@ -52,6 +52,13 @@ $font-stack: Lato;
       margin-top: 0;
       margin-bottom: 0;
     }
+    &:hover {
+      transform: rotate(360deg);
+      transition: 2s;
+    }
+    &:active {
+      transform: scale(2);
+    }
   }
 }
 
