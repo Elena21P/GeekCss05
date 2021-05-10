@@ -1,0 +1,28 @@
+$background-color-dark: #222222;
+$background-color-light: #f8f3f4;
+$background-color-light-card: #f3eeef;
+$color-pink: #f16d7f;
+$color-black: #222222;
+$color-gray: #575757;
+
+$font-stack: Lato;
+
+@mixin flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-space-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

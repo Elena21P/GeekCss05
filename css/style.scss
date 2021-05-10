@@ -1,0 +1,79 @@
+$background-color-dark: #222222;
+$background-color-light: #f8f3f4;
+$background-color-light-card: #f3eeef;
+$color-primary: #f16d7f;
+$color-black: #222222;
+$color-text: #575757;
+$color-secondary: #6f6e6e;
+$color-intut-border: #a4a4a4;
+
+$font-stack: Lato;
+
+@mixin button-on-hover {
+  border-color: $color-primary;
+  color: $color-primary;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 2s;
+}
+
+body {
+  font-family: $font-stack;
+}
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button-icon {
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+input {
+  border-radius: 0;
+  border: 1px solid $color-intut-border;
+  padding: 15px;
+  color: $color-intut-border;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  &:focus {
+    border: 1px solid $color-primary;
+  }
+}
+
+input[type="submit"]:hover {
+  @include button-on-hover;
+}
+
+input[type="submit"]:focus {
+  @include button-on-hover;
+}
+
+button {
+  padding: 15px 25px;
+  border: 1px solid $color-intut-border;
+  &:hover {
+    @include button-on-hover;
+  }
+  &:focus {
+    @include button-on-hover;
+  }
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: white;
+}
