@@ -1,0 +1,73 @@
+$background-color-dark: #222222;
+$background-color-light: #f8f3f4;
+$background-color-light-card: #f3eeef;
+$color-primary: #f16d7f;
+$color-black: #222222;
+$color-gray: #575757;
+
+$font-stack: Lato;
+
+.header {
+  background-color: $background-color-dark;
+  position: relative;
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    & > div {
+      padding: 15px;
+    }
+    .search {
+      display: flex;
+      flex-direction: row;
+    }
+    & .search-form {
+      flex: 1;
+    }
+    .header__label {
+      background: url("../../img/magnify.svg") no-repeat scroll;
+      background-position: center left;
+      padding-right: 7px;
+      width: 28px;
+    }
+    .header__input {
+      font-size: 30px;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0px;
+      color: white;
+      padding-left: 0px;
+      &:focus {
+        transition: 1s;
+        border-radius: 0px;
+        outline: none;
+        border-bottom-color: white;
+      }
+    }
+
+    .header__nav {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      .btn-basket {
+        position: relative;
+        .num_in_basket {
+          position: absolute;
+          font-size: 12px;
+          color: white;
+          background-color: $color-primary;
+          display: inline-flex;
+          border-radius: 50%;
+          height: 17px;
+          width: 17px;
+          vertical-align: top;
+          justify-content: center;
+          align-items: center;
+          margin-top: -8px;
+        }
+      }
+    }
+  }
+}

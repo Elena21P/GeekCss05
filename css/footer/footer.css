@@ -1,0 +1,33 @@
+.footer {
+  background-color: #222224;
+}
+
+.copyright__container {
+  color: #f8f8f8;
+  font-weight: normal;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.copyright__container button {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+  margin: 15px 0px;
+  border: none;
+}
+
+.copyright__container button svg {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=footer.css.map */

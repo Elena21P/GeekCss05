@@ -1,0 +1,98 @@
+.header {
+  background-color: #222222;
+  position: relative;
+}
+
+.header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+}
+
+.header .header__container > div {
+  padding: 15px;
+}
+
+.header .header__container .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .header__container .search-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header .header__container .header__label {
+  background: url("../../img/magnify.svg") no-repeat scroll;
+  background-position: center left;
+  padding-right: 7px;
+  width: 28px;
+}
+
+.header .header__container .header__input {
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  color: white;
+  padding-left: 0px;
+}
+
+.header .header__container .header__input:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 0px;
+  outline: none;
+  border-bottom-color: white;
+}
+
+.header .header__container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.header .header__container .header__nav .btn-basket {
+  position: relative;
+}
+
+.header .header__container .header__nav .btn-basket .num_in_basket {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  background-color: #f16d7f;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  vertical-align: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -8px;
+}
+/*# sourceMappingURL=header.css.map */

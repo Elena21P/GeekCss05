@@ -1,0 +1,97 @@
+@media (max-width: 759px) {
+  .product__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+    gap: 15px;
+  }
+  .container {
+    padding: 0 7px;
+    max-width: 361px;
+  }
+  .btn-user,
+  .btn-basket {
+    display: none;
+    padding: 0;
+  }
+  .header {
+    background-color: #17dd21;
+  }
+  .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: calc(100vh - 72px);
+    max-height: 363px;
+  }
+  .promo .promo_img {
+    display: none;
+  }
+  .promo .promo__text {
+    padding: 25px;
+    font-size: 20px;
+  }
+  .promo .promo__text .promo__text__top {
+    font-size: 36px;
+  }
+  .offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .copyright__container {
+    color: #f8f8f8;
+    font-weight: normal;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .copyright__container .social {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .copyright__container .rights {
+    padding-bottom: 10px;
+  }
+  .subscribe__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+  }
+  .subscribe__container > div {
+    margin: 25px 0;
+  }
+  .feature__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .feature__container .feature__block {
+    padding: 30px 20px;
+  }
+}
+/*# sourceMappingURL=style759.css.map */
