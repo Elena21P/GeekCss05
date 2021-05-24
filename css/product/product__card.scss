@@ -17,6 +17,9 @@
 
       .product__img {
         height: 420px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       .card-overlay {
         background: rgba(58, 56, 56, 0.86);

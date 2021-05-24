@@ -1,0 +1,14 @@
+details {
+  border: 1px solid green;
+  margin-bottom: 20px;
+}
+::-webkit-details-marker {
+  display: none;
+}
+summary {
+  display: block;
+  border-left: 10px solid green;
+  border-bottom: 1px solid green;
+  padding: 10px;
+  outline: none;
+}

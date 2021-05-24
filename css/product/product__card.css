@@ -29,6 +29,9 @@
 
 .product__items .product__item .product__card .product__img {
   height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .product__items .product__item .product__card .card-overlay {
