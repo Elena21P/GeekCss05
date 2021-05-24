@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shop</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/catalog/pages.css" />
-
-    <link rel="stylesheet" href="css/header/header.css" />
 
     <link rel="stylesheet" href="css/footer/footer.css" />
     <link rel="stylesheet" href="css/footer/subscribe.css" />
@@ -17,10 +14,16 @@
     <link rel="stylesheet" href="css/section.css" />
     <link rel="stylesheet" href="css/index/feature.css" />
     <link rel="stylesheet" href="css/product/product__card.css" />
+    <link rel="stylesheet" href="css/header/nav__wrap.css" />
+    <link rel="stylesheet" href="css/page/page_title.css" />
+    <link rel="stylesheet" href="css/page/breadcrumb.css" />
+    <link rel="stylesheet" href="css/catalog/pages.css" />
+
     <link rel="stylesheet" href="css/media/style1140.css" />
     <link rel="stylesheet" href="css/media/style760_1139.css" />
     <link rel="stylesheet" href="css/media/style759.css" />
-    <link rel="stylesheet" href="css/header/nav__wrap.css" />
+
+    <link rel="stylesheet" href="css/header/header.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
       rel="stylesheet"
@@ -53,17 +56,17 @@
           <button class="btn-icon btn-menu" onclick="setNavWrapDisplay()">
             <img src="img/menu.svg" alt="user" />
           </button>
-          <button class="btn-icon btn-user">
-            <a href="registration.html">
+          <div class="btn-icon btn-user">
+            <a href="registration.html" class="a-icon">
               <img src="img/user.svg" alt="user"
             /></a>
-          </button>
-          <button class="btn-icon btn-basket">
-            <a href="basket.html">
+          </div>
+          <div class="btn-icon btn-basket">
+            <a class="a-icon" href="basket.html">
               <img src="img/basket.svg" alt="user" />
               <div class="num_in_basket"><span>5</span></div>
             </a>
-          </button>
+          </div>
         </div>
       </div>
 
@@ -138,14 +141,47 @@
       </div>
     </header>
     <main>
+      <div class="page_title">
+        <div class="page_title__container container">
+          <div><h1 class="title">NEW ARRIVALS</h1></div>
+          <div class="breadcrumb__container">
+            <a class="breadcrumb__item" href="index.html">HOME</a>
+            <a class="breadcrumb__item" href="#">MEN</a>
+            <a class="breadcrumb__item current" href="#">NEW ARRIVALS </a>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="fetured">
           <div class="product__items" id="product-items"></div>
-          <!-- <div class="pages">
-            <button class="btn-secondary"><</button>
-            12345
-            <button class="btn-secondary">></button>
-          </div> -->
+        </div>
+        <div class="pages__container">
+          <div class="pages">
+            <button class="btn-icon-black">
+              <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                />
+              </svg>
+            </button>
+            <a class="page-num" href="#">1</a>
+            <a class="page-num" href="#">2</a>
+            <a class="page-num" href="#">3</a>
+            <a class="page-num" href="#">4</a>
+            <a class="page-num" href="#">5</a>
+            <a class="page-num" href="#">6</a>
+            ...
+            <a class="page-num" href="#">20</a>
+            <button class="btn-icon-black">
+              <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <article class="feature">

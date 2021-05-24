@@ -129,6 +129,33 @@ button:hover {
   cursor: pointer;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-by-margin {
+  margin: 0 auto;
+}
+
+.block-big-margin-y {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.primary-on-hover {
+  &:hover {
+    color: $color-primary;
+  }
+}
+
 .round {
   border-radius: 50%;
+}
+
+.odd-items {
+  .product__item {
+    display: flex;
+  }
 }

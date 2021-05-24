@@ -5,6 +5,7 @@ $color-text: #6f6e6e;
 header {
   .nav__wrap {
     max-width: 232px;
+    z-index: 99;
     position: absolute;
     right: 0;
     top: 100%;

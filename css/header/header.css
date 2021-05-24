@@ -71,6 +71,18 @@
           column-gap: 20px;
 }
 
+.header .header__container .header__nav .a-icon {
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
 .header .header__container .header__nav .btn-basket {
   position: relative;
 }
@@ -94,5 +106,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: -8px;
+  margin-left: 35px;
 }
 /*# sourceMappingURL=header.css.map */

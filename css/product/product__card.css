@@ -75,9 +75,10 @@
   transition: 1s;
 }
 
-.product__items .product__item .product__card .product__img:hover {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+.product__items .product__item .product__card .product__img:hover ~ .block__dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product__items .product__item .product__card .product__img:hover ~ button {

@@ -79,5 +79,8 @@
   .feature__container .feature__block {
     padding: 30px 20px;
   }
+  .odd-items .product__item:last-child {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style760_1139.css.map */

@@ -73,4 +73,10 @@
       padding: 30px 20px;
     }
   }
+
+  .odd-items {
+    .product__item:last-child {
+      display: none;
+    }
+  }
 }

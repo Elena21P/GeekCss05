@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/header/nav__wrap.css" />
     <link rel="stylesheet" href="css/page/page_title.css" />
     <link rel="stylesheet" href="css/page/breadcrumb.css" />
-    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/product/product__page.css" />
 
     <link rel="stylesheet" href="css/media/style1140.css" />
     <link rel="stylesheet" href="css/media/style760_1139.css" />
@@ -141,7 +141,7 @@
         </ul>
       </div>
     </header>
-    <main class="">
+    <main>
       <div class="page_title">
         <div class="page_title__container container">
           <div><h1 class="title">NEW ARRIVALS</h1></div>
@@ -152,64 +152,60 @@
           </div>
         </div>
       </div>
-      <div class="reg__container container">
-        <form class="form-reg">
-          <label for="name">Your Name</label>
-          <input type="text" id="firstname" placeholder="First Name" required />
-          <input type="text" id="lastname" placeholder="Last Name" />
-          <div class="gender-radio">
-            <input
-              type="radio"
-              id="gender-male"
-              name="gender"
-              value="male"
-              required
-            />
-            <label for="gender-male">Male</label>
-
-            <input
-              type="radio"
-              id="gender-female"
-              name="gender"
-              value="female"
-              required
-            />
-            <label for="gender-female">Female</label>
-          </div>
-          <label for="email">Login detail</label>
-          <input type="email" id="email" placeholder="Email" required />
-          <input type="password" id="pass" placeholder="Password" required />
-          <p class="pass-note">
-            Please use 8 or more characters, with at least 1 number and a
-            mixture of uppercase and lowercase letters
-          </p>
-          <div class="form-actions">
-            <button class="btn-primary">
-              JOIN NOW
+      <div class="product__container">
+        <div class="slide">
+          <button class="slide__btn">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+              />
+            </svg>
+          </button>
+          <img style="z-index: 0" src="./img/product-page/slide_img.png" />
+          <button class="slide__btn slide__btn-active">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="container">
+          <div class="product-description">
+            <h2 class="product-description__title-group">WOMEN COLLECTION</h2>
+            <h1 class="product-description__title">MOSCHINO CHEAP AND CHIC</h1>
+            <p>
+              Compellingly actualize fully researched processes before proactive
+              outsourcing.<br />
+              Progressively syndicate collaborative architectures before
+              cutting-edge services. Completely visualize parallel core
+              competencies rather than exceptional portals.
+            </p>
+            <div class="product-description__price primary">$561</div>
+            <div class="product-description__chooses">
+              <div class="product-description__choose">CHOOSE SIZE</div>
+              <div class="product-description__choose">CHOOSE COLOR</div>
+              <div class="product-description__choose">QUANTITY</div>
+            </div>
+            <button class="btn-secondary flex-center center-by-margin">
               <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                  d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"
                 />
               </svg>
+              <div>Add to Cart</div>
             </button>
           </div>
-        </form>
-
-        <div class="perks__container">
-          <p>LOYALTY HAS ITS PERKS</p>
-          <p>
-            Get in on the loyalty program where you can earn points and unlock
-            serious perks. Starting with these as soon as you join:
-          </p>
-          <ul>
-            <li>15% off welcome offer</li>
-            <li>Free shipping, returns and exchanges on all orders</li>
-            <li>$10 off a purchase on your birthday</li>
-            <li>Early access to products</li>
-            <li>Exclusive offers & rewards</li>
-          </ul>
         </div>
+      </div>
+      <div class="container">
+        <div
+          class="product__items block-big-margin-y odd-items"
+          id="product-items"
+        ></div>
       </div>
     </main>
     <footer class="footer">
@@ -289,3 +285,30 @@
     </footer>
   </body>
 </html>
+<script type="module">
+  import { getItems } from "./script/product_card.js";
+  import { getProductItemHtml } from "./script/product_card.js";
+  window.onload = onLoadWindow;
+  function setNavWrapDisplay() {
+    const elem = document.getElementById("nav-wrap");
+    if (elem.classList.contains("display-none"))
+      elem.classList.remove("display-none");
+    else elem.classList.add("display-none");
+  }
+  function onLoadWindow() {
+    loadProdactCard();
+  }
+  function loadProdactCard() {
+    let elemGrid = document.getElementById("product-items");
+
+    const products = getItems(3, "./img/product-page/");
+
+    let innerHTML = elemGrid.innerHTML;
+
+    products.forEach((item) => {
+      innerHTML += getProductItemHtml(item);
+    });
+
+    elemGrid.innerHTML = innerHTML;
+  }
+</script>

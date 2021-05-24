@@ -117,7 +117,38 @@ button:hover {
   cursor: pointer;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-by-margin {
+  margin: 0 auto;
+}
+
+.block-big-margin-y {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.primary-on-hover:hover {
+  color: #f16d7f;
+}
+
 .round {
   border-radius: 50%;
+}
+
+.odd-items .product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=common.css.map */

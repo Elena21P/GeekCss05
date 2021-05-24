@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="css/header/nav__wrap.css" />
     <link rel="stylesheet" href="css/page/page_title.css" />
     <link rel="stylesheet" href="css/page/breadcrumb.css" />
-    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/product/product__page.css" />
+
+    <link rel="stylesheet" href="css/shopping.css" />
 
     <link rel="stylesheet" href="css/media/style1140.css" />
     <link rel="stylesheet" href="css/media/style760_1139.css" />
@@ -141,7 +143,7 @@
         </ul>
       </div>
     </header>
-    <main class="">
+    <main>
       <div class="page_title">
         <div class="page_title__container container">
           <div><h1 class="title">NEW ARRIVALS</h1></div>
@@ -152,63 +154,64 @@
           </div>
         </div>
       </div>
-      <div class="reg__container container">
-        <form class="form-reg">
-          <label for="name">Your Name</label>
-          <input type="text" id="firstname" placeholder="First Name" required />
-          <input type="text" id="lastname" placeholder="Last Name" />
-          <div class="gender-radio">
-            <input
-              type="radio"
-              id="gender-male"
-              name="gender"
-              value="male"
-              required
-            />
-            <label for="gender-male">Male</label>
 
-            <input
-              type="radio"
-              id="gender-female"
-              name="gender"
-              value="female"
-              required
-            />
-            <label for="gender-female">Female</label>
+      <div class="shopping container">
+        <div class="shopping__cards">
+          <div class="card">
+            <img src="./img/shopping-card/man1.png" alt="man1" />
+            <div class="form">
+              <div class="header">
+                MANGO PEOPLE <br />T-SHIRT
+                <button class="button-icon">
+                  <img src="./img/close.svg" />
+                </button>
+              </div>
+              <div>Price: <span class="text-primary">$300</span></div>
+              <div>Color: <span class="text-secondary">Red</span></div>
+              <div>Size: <span class="text-secondary">Xl</span></div>
+              <div>Quantity: <input type="number" value="2" /></div>
+            </div>
           </div>
-          <label for="email">Login detail</label>
-          <input type="email" id="email" placeholder="Email" required />
-          <input type="password" id="pass" placeholder="Password" required />
-          <p class="pass-note">
-            Please use 8 or more characters, with at least 1 number and a
-            mixture of uppercase and lowercase letters
-          </p>
-          <div class="form-actions">
-            <button class="btn-primary">
-              JOIN NOW
-              <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
-                />
-              </svg>
-            </button>
+          <div class="card">
+            <img src="./img/shopping-card/man2.png" alt="man2" />
+            <div class="form">
+              <div class="header">
+                MANGO PEOPLE <br />T-SHIRT
+                <button class="button-icon">
+                  <img src="./img/close.svg" />
+                </button>
+              </div>
+              <div>Price: <span class="text-primary">$300</span></div>
+              <div>Color: <span class="text-secondary">Red</span></div>
+              <div>Size: <span class="text-secondary">Xl</span></div>
+              <div>Quantity: <input type="number" value="2" /></div>
+            </div>
           </div>
-        </form>
-
-        <div class="perks__container">
-          <p>LOYALTY HAS ITS PERKS</p>
-          <p>
-            Get in on the loyalty program where you can earn points and unlock
-            serious perks. Starting with these as soon as you join:
-          </p>
-          <ul>
-            <li>15% off welcome offer</li>
-            <li>Free shipping, returns and exchanges on all orders</li>
-            <li>$10 off a purchase on your birthday</li>
-            <li>Early access to products</li>
-            <li>Exclusive offers & rewards</li>
-          </ul>
+          <div class="actions">
+            <input type="submit" value="CLEAR SHOPPING CART" />
+            <input type="submit" value="CONTINUE SHOPPING" />
+          </div>
+        </div>
+        <div class="shopping__form">
+          <div class="shipping__form">
+            <h3>SHIPPING ADRESS</h3>
+            <div class="shipping__fields">
+              <input type="text" value="Bangladesh" />
+              <input type="text" placeholder="State" />
+              <input type="text" placeholder="Postcode / Zip" />
+            </div>
+            <input type="submit" value="GET A QUOTE" />
+          </div>
+          <div class="shopping__total">
+            <div class="sub">SUB TOTAL <span>$900</span></div>
+            <div class="grand">
+              GRAND TOTAL<span class="sum text-primary">$900</span>
+            </div>
+            <hr />
+            <div class="total__actions">
+              <button class="btn-primary">PROCEED TO CHECKOUT</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
