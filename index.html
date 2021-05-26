@@ -9,18 +9,19 @@
 
     <link rel="stylesheet" href="css/header/header.css" />
 
-    <link rel="stylesheet" href="css/footer/footer.css" />
-    <link rel="stylesheet" href="css/footer/subscribe.css" />
+    <!-- <link rel="stylesheet" href="css/footer/footer.css" />
+    <link rel="stylesheet" href="css/footer/subscribe.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    -->
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/section.css" />
+    <!-- <link rel="stylesheet" href="css/section.css" />
     <link rel="stylesheet" href="css/product/product__card.css" />
     <link rel="stylesheet" href="css/index/promo.css" />
     <link rel="stylesheet" href="css/index/offer.css" />
     <link rel="stylesheet" href="css/index/feature.css" />
     <link rel="stylesheet" href="css/media/style1140.css" />
     <link rel="stylesheet" href="css/media/style760_1139.css" />
-    <link rel="stylesheet" href="css/media/style759.css" />
+    <link rel="stylesheet" href="css/media/style759.css" />-->
     <link rel="stylesheet" href="css/header/nav__wrap.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
@@ -38,31 +39,66 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="container header__container">
+      <div class="container header__container flex-space-between">
         <div class="header__logo">
-          <a href="index.html"><img src="img/logo.png" alt="index" /></a>
+          <a class="btn" href="index.html"
+            ><img src="img/logo.png" alt="index"
+          /></a>
         </div>
         <div class="search-form">
           <form method="POST">
-            <div class="search">
-              <label class="header__label" for="search"></label>
-              <input class="header__input" type="text" id="search" />
+            <div class="search flex-row">
+              <label class="search__label" for="search"></label>
+              <input class="search__input" type="text" id="search" />
             </div>
           </form>
         </div>
-        <div class="header__nav">
-          <button class="btn-icon btn-menu" onclick="setNavWrapDisplay()">
+        <div class="header__nav flex-row">
+          <button
+            class="
+              btn
+              padding-simple
+              flex-center
+              text-white
+              back-transparent back_hover-primary
+              border-transparent border_focus-white
+              btn-menu
+            "
+            onclick="setNavWrapDisplay()"
+          >
             <img src="img/menu.svg" alt="user" />
           </button>
-          <div class="btn-icon btn-user">
-            <a href="registration.html" class="a-icon">
+          <div>
+            <a
+              class="
+                btn
+                flex-center
+                padding-simple
+                text-white
+                back-transparent back_hover-primary
+                border-transparent border_focus-white
+                btn-user
+              "
+              href="registration.html"
+            >
               <img src="img/user.svg" alt="user"
             /></a>
           </div>
-          <div class="btn-icon btn-basket">
-            <a class="a-icon" href="basket.html">
+          <div>
+            <a
+              class="
+                btn
+                flex-center
+                padding-simple
+                text-white
+                back-transparent back_hover-primary
+                border-transparent border_focus-white
+                btn-cart
+              "
+              href="basket.html"
+            >
               <img src="img/basket.svg" alt="user" />
-              <div class="num_in_basket"><span>5</span></div>
+              <div class="num-in-cart"><span>5</span></div>
             </a>
           </div>
         </div>
@@ -315,7 +351,7 @@
               <div style="font-size: 24px; font-weight: bold">SUBSCRIBE</div>
               <div>FOR OUR NEWLETTER AND PROMOTION</div>
               <div>
-                <form class="subscribe__form" method="POST">
+                <form class="subscribe__form">
                   <input
                     class="subscribe__email"
                     placeholder="Enter Your Email"
@@ -325,7 +361,6 @@
                     class="subscribe__btn"
                     type="submit"
                     value="Subscribe"
-                    autofocus
                   />
                 </form>
               </div>
