@@ -1,17 +1,122 @@
-details {
-  border: 1px solid green;
-  margin-bottom: 20px;
+.filter__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 1fr;
+      grid-template-columns: 360px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+  position: relative;
 }
 
-::-webkit-details-marker {
-  display: none;
+.filter__container > div {
+  margin-top: 45px;
 }
 
-summary {
-  display: block;
-  border-left: 10px solid green;
-  border-bottom: 1px solid green;
+.filter__container svg {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.filter__container .filter__left {
+  position: relative;
+}
+
+.filter__container .filter__left .filter__block {
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+  background-color: white;
+}
+
+.filter__container .filter__left .filter__block ul {
+  padding-left: 5px;
+}
+
+.filter__container .filter__left .filter__block .filter__summary {
+  font-weight: 600;
   padding: 10px;
+}
+
+.filter__container .filter__left .filter__block > details[open] {
+  width: 360px;
+  -webkit-box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filter__container .filter__groups {
+  position: relative;
+}
+
+.filter__container .filter__groups summary {
+  font-weight: normal;
+  padding: 10px;
+}
+
+.filter__container .filter__groups .trending__block {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.filter__container .filter__groups .size__block {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 98;
+  background-color: white;
+}
+
+.filter__container .filter__groups .size__block > details[open] {
+  width: 100px;
+  -webkit-box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+}
+
+.filter__container .filter__groups .size__block > details[open] > ul {
+  padding-left: 20px;
+}
+
+.filter__container .filter__groups .size__block > details[open] > ul > li > label {
+  padding: 10px;
+}
+
+.filter__container .filter__groups .price__block {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+details {
+  padding-bottom: 10px;
+}
+
+details summary {
+  display: block;
+}
+
+details summary:hover {
+  cursor: pointer;
+  color: #f16d7f;
+}
+
+details summary:focus {
   outline: none;
+  color: #f16d7f;
+}
+
+.filter__subsummary {
+  border-bottom: solid 1px #a4a4a4;
+  border-left: solid 3px #f16d7f;
+  border-top: none;
+  border-right: none;
+  padding: 8px;
+  margin: 8px;
+}
+
+.filter__item {
+  padding-left: 25px;
 }
 /*# sourceMappingURL=filter.css.map */

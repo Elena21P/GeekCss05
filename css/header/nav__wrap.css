@@ -7,8 +7,6 @@ header .nav__wrap {
   background-color: white;
   -webkit-box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
           box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-  font-weight: normal;
-  font-size: 14px;
   padding: 15px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,22 +28,8 @@ header .nav__wrap .nav__title {
   padding-bottom: 8px;
 }
 
-header .nav__wrap .nav__heading {
-  font-weight: normal;
-  font-size: 14px;
-}
-
 header .nav__wrap ul {
-  list-style-type: none;
   padding-left: 18px;
   line-height: 1.5;
-}
-
-header .nav__wrap a {
-  text-decoration: none;
-}
-
-header .nav__wrap a:focus {
-  outline: none;
 }
 /*# sourceMappingURL=nav__wrap.css.map */

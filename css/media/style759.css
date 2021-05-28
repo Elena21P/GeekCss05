@@ -10,7 +10,6 @@
     gap: 15px;
   }
   .container {
-    padding: 0 7px;
     max-width: 361px;
   }
   .page_title .page_title__container {
@@ -36,15 +35,13 @@
   .page_title .page_title__container > div .title {
     margin: 0px 0;
   }
-  .header {
-    background-color: #17dd21;
-  }
   .header .header__container .header__nav .btn-user,
-  .header .header__container .header__nav .btn-basket {
+  .header .header__container .header__nav .btn-cart {
     display: none;
     padding: 0;
   }
-  .header .header__container .header__nav .a-icon {
+  .header .header__container .header__nav .btn,
+  .header .header__container .header__nav .link {
     padding: 0;
   }
   .promo {
@@ -118,6 +115,7 @@
   }
   .feature__container .feature__block {
     padding: 30px 20px;
+    width: 100%;
   }
   .odd-items .product__item:nth-child(2) {
     display: none;

@@ -1,13 +1,6 @@
-.reg__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .form-reg {
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,18 +10,12 @@
           flex-direction: column;
   width: 35%;
   min-width: 360px;
-  color: #222222;
   font-size: 13px;
   font-weight: 300;
 }
 
-.form-reg * {
-  margin: 10px;
-}
-
-.form-reg label {
-  font-size: 16px;
-  margin-top: 25px;
+.form-reg button {
+  margin-top: 30px;
 }
 
 .form-reg .gender-radio label {
@@ -37,41 +24,6 @@
 
 .form-reg .pass-note {
   color: #b1b1b1;
-}
-
-.form-reg .form-actions {
-  padding: 0;
-  margin: 0;
-}
-
-.form-reg button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-}
-
-.form-reg button svg {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.form-reg button:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.form-reg button:active {
-  -webkit-transform: scale(2);
-          transform: scale(2);
 }
 
 .perks__container {
@@ -92,13 +44,10 @@
 
 .perks__container ul li {
   margin-top: 10px;
-}
-
-li {
   position: relative;
 }
 
-ul li:before {
+.perks__container ul li:before {
   position: absolute;
   top: 2px;
   left: 0;

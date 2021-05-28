@@ -7,8 +7,6 @@ header {
     top: 100%;
     background-color: white;
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-    font-weight: normal;
-    font-size: 14px;
     padding: 15px 30px;
     box-sizing: border-box;
     & div:first-child {
@@ -22,21 +20,9 @@ header {
       font-size: 16px;
       padding-bottom: 8px;
     }
-
-    .nav__heading {
-      font-weight: normal;
-      font-size: 14px;
-    }
     ul {
-      list-style-type: none;
       padding-left: 18px;
       line-height: 1.5;
-    }
-    & a {
-      text-decoration: none;
-      &:focus {
-        outline: none;
-      }
     }
   }
 }

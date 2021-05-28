@@ -27,6 +27,7 @@ $color-primary: #f16d7f;
     a {
       margin: 10px;
       color: #c4c4c4;
+      text-decoration: none;
       &:hover {
         color: $color-primary;
       }

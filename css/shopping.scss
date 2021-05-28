@@ -25,54 +25,54 @@ $font-stack: Lato;
   display: flex;
 
   justify-content: space-between;
-}
+  align-items: flex-start;
 
-.shopping__cards {
-  display: flex;
-  flex-direction: column;
-  margin-right: 100px;
-  .card {
-    height: 306px;
-    width: 652px;
-    margin-bottom: 30px;
-    box-shadow: 25px 25px 15px rgba(122, 122, 122, 0.3);
+  .shopping__cards {
     display: flex;
-    justify-content: space-around;
-    font-size: 22px;
-    color: $color-text;
-    .form {
-      flex: 1;
-      padding: 20px;
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 10px 0;
-        font-size: 24px;
-        color: $color-black;
-        margin-bottom: 35px;
+    flex-direction: column;
+    margin: 50px 100px 50px 0px;
+    .card {
+      height: 306px;
+      width: 652px;
+      margin-bottom: 30px;
+      box-shadow: 25px 25px 15px rgba(122, 122, 122, 0.3);
+      display: flex;
+      justify-content: space-around;
+      font-size: 22px;
+      color: $color-text;
+      .form {
+        flex: 1;
+        padding: 20px;
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 10px 0;
+          font-size: 24px;
+          color: $color-black;
+          margin-bottom: 35px;
+        }
+        div {
+          padding: 2px;
+        }
+        input {
+          margin-left: 20px;
+          color: $color-secondary;
+          font-size: 18px;
+          padding: 1px 3px;
+          border: solid 1px #eaeaea;
+          text-align: center;
+          width: 35px;
+        }
       }
-      div {
-        padding: 2px;
-      }
-      input {
-        margin-left: 20px;
-        color: $color-secondary;
-        font-size: 18px;
-        padding: 1px 3px;
-        border: solid 1px #eaeaea;
-        text-align: center;
-        width: 35px;
-      }
+    }
+    .actions {
+      margin-top: 50px;
     }
   }
-  .actions {
+
+  .shopping__block {
     margin-top: 50px;
-    @include flex-space-between;
-    input {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
   }
 }
 
@@ -110,9 +110,9 @@ $font-stack: Lato;
     margin-top: 10px;
   }
   hr {
-    border: none; /* Убираем границу для браузера Firefox */
-    color: #e7e2e2; /* Цвет линии для остальных браузеров */
-    background-color: #e7e2e2; /* Цвет линии для браузера Firefox и Opera */
+    border: none;
+    color: #e7e2e2;
+    background-color: #e7e2e2;
     height: 1px;
   }
   .sub {
@@ -128,5 +128,8 @@ $font-stack: Lato;
     button {
       flex: 1;
     }
+  }
+  .sum {
+    padding-left: 10px;
   }
 }

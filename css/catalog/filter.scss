@@ -1,14 +1,103 @@
+$color-primary: #f16d7f;
+$color-secondary: #6f6e6e;
+$color-input-border: #a4a4a4;
+
+.filter__container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  align-items: center;
+  margin-bottom: 70px;
+  > div {
+    margin-top: 45px;
+  }
+  & svg {
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+  position: relative;
+  .filter__left {
+    position: relative;
+    .filter__block {
+      position: absolute;
+      top: 0px;
+      z-index: 99;
+      background-color: white;
+      ul {
+        padding-left: 5px;
+      }
+
+      .filter__summary {
+        font-weight: 600;
+        padding: 10px;
+      }
+      > details[open] {
+        width: 360px;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .filter__groups {
+    position: relative;
+    & summary {
+      font-weight: normal;
+      padding: 10px;
+    }
+    .trending__block {
+      position: absolute;
+      top: 0;
+      left: 30px;
+    }
+
+    .size__block {
+      position: absolute;
+      top: 0;
+      left: 200px;
+      z-index: 98;
+      background-color: white;
+      > details[open] {
+        width: 100px;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+        padding-bottom: 10px;
+        > ul {
+          padding-left: 20px;
+          > li {
+            > label {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+    .price__block {
+      position: absolute;
+      top: 0;
+      left: 300px;
+    }
+  }
+}
+
 details {
-  border: 1px solid green;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  summary {
+    display: block;
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+    }
+    &:focus {
+      outline: none;
+      color: $color-primary;
+    }
+  }
 }
-::-webkit-details-marker {
-  display: none;
+.filter__subsummary {
+  border-bottom: solid 1px $color-input-border;
+  border-left: solid 3px $color-primary;
+  border-top: none;
+  border-right: none;
+  padding: 8px;
+  margin: 8px;
 }
-summary {
-  display: block;
-  border-left: 10px solid green;
-  border-bottom: 1px solid green;
-  padding: 10px;
-  outline: none;
+.filter__item {
+  padding-left: 25px;
 }

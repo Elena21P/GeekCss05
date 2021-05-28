@@ -5,6 +5,14 @@ body {
   font-family: Lato, Arial;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 14px;
+  font-weight: normal;
+  color: #9f9f9f;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.5;
 }
 
 .page {
@@ -19,6 +27,8 @@ body {
   width: 100%;
   margin: 0 auto;
   max-width: 1140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .display-none {
@@ -32,6 +42,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   vertical-align: middle;
 }
 
@@ -92,7 +105,7 @@ body {
   border: transparent solid 1px;
   -webkit-transition: 1s;
   transition: 1s;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 .btn_form-primary:hover, .btn_form-primary:focus {
@@ -100,6 +113,68 @@ body {
   color: #f16d7f;
   cursor: pointer;
   border: #f16d7f solid 1px;
+}
+
+.btn_form-primary-light {
+  background-color: transparent;
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  border: #f16d7f solid 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 10px 30px;
+}
+
+.btn_form-primary-light:hover, .btn_form-primary-light:focus {
+  background-color: #f16d7f;
+  color: white;
+  cursor: pointer;
+  border: #f16d7f solid 1px;
+}
+
+.btn_form-primary-light svg {
+  padding-right: 10px;
+}
+
+.btn_form-secondary {
+  background-color: transparent;
+  color: #6f6e6e;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  border: #6f6e6e solid 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 10px 30px;
+}
+
+.btn_form-secondary:hover, .btn_form-secondary:focus {
+  background-color: #6f6e6e;
+  color: white;
+  cursor: pointer;
+  border: #6f6e6e solid 1px;
+}
+
+.btn_form-secondary svg {
+  padding-right: 10px;
+}
+
+.form-input {
+  margin-top: 15px;
+  padding: 15px;
+  outline: none;
+  border: solid 1px #a4a4a4;
+}
+
+.form-input:focus {
+  border-color: #f16d7f;
+}
+
+.form-label {
+  font-size: 16px;
+  margin-top: 25px;
 }
 
 .margin-20 {
@@ -155,6 +230,7 @@ body {
 
 .link {
   text-decoration: none;
+  outline: none;
 }
 
 .link:hover {
@@ -257,5 +333,10 @@ body {
   font-weight: normal;
   color: #9f9f9f;
   text-align: center;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=common.css.map */

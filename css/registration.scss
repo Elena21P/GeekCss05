@@ -7,29 +7,19 @@ $color-text: #575757;
 $color-secondary: #6f6e6e;
 $color-intut-border: #a4a4a4;
 
-$font-stack: Lato;
-
-.reg__container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .form-reg {
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   width: 35%;
 
   min-width: 360px;
-  color: $background-color-dark;
   font-size: 13px;
   font-weight: 300;
 
-  & * {
-    margin: 10px;
-  }
-  label {
-    font-size: 16px;
-    margin-top: 25px;
+  button {
+    margin-top: 30px;
   }
   .gender-radio {
     label {
@@ -38,27 +28,6 @@ $font-stack: Lato;
   }
   .pass-note {
     color: #b1b1b1;
-  }
-  .form-actions {
-    padding: 0;
-    margin: 0;
-  }
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    svg {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    &:hover {
-      transform: rotate(360deg);
-      transition: 2s;
-    }
-    &:active {
-      transform: scale(2);
-    }
   }
 }
 
@@ -74,21 +43,17 @@ $font-stack: Lato;
     list-style: none;
     li {
       margin-top: 10px;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        content: " ";
+        width: 50px;
+        height: 50px;
+        background: url("../img/list-item.svg") no-repeat;
+        margin-left: -40px;
+      }
     }
   }
-}
-
-li {
-  position: relative;
-}
-
-ul li:before {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  content: " ";
-  width: 50px;
-  height: 50px;
-  background: url("../img/list-item.svg") no-repeat;
-  margin-left: -40px;
 }

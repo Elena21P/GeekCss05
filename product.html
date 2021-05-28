@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shop Product</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/normalize.css" />
 
-    <link rel="stylesheet" href="css/footer/footer.css" />
-    <link rel="stylesheet" href="css/footer/subscribe.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/section.css" />
-    <link rel="stylesheet" href="css/index/feature.css" />
-    <link rel="stylesheet" href="css/product/product__page.css" />
-    <link rel="stylesheet" href="css/product/product__card.css" />
+    <link rel="stylesheet" href="css/header/header.css" />
     <link rel="stylesheet" href="css/header/nav__wrap.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
+
+    <link rel="stylesheet" href="css/product/product__card.css" />
+    <link rel="stylesheet" href="css/index/feature.css" />
+
     <link rel="stylesheet" href="css/page/page_title.css" />
     <link rel="stylesheet" href="css/page/breadcrumb.css" />
+    <link rel="stylesheet" href="css/catalog/filter.css" />
+    <link rel="stylesheet" href="css/catalog/pages.css" />
     <link rel="stylesheet" href="css/product/product__page.css" />
 
     <link rel="stylesheet" href="css/media/style1140.css" />
     <link rel="stylesheet" href="css/media/style760_1139.css" />
     <link rel="stylesheet" href="css/media/style759.css" />
-
-    <link rel="stylesheet" href="css/header/header.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
       rel="stylesheet"
@@ -40,32 +40,67 @@
     />
   </head>
   <body class="page">
-    <header class="header">
-      <div class="container header__container">
+    <header class="header back-dark">
+      <div class="container header__container flex-space-between">
         <div class="header__logo">
-          <a href="index.html"><img src="img/logo.png" alt="index" /></a>
+          <a class="btn" href="index.html"
+            ><img src="img/logo.png" alt="index"
+          /></a>
         </div>
         <div class="search-form">
           <form method="POST">
-            <div class="search">
-              <label class="header__label" for="search"></label>
-              <input class="header__input" type="text" id="search" />
+            <div class="search flex-row">
+              <label class="search__label" for="search"></label>
+              <input class="search__input" type="text" id="search" />
             </div>
           </form>
         </div>
-        <div class="header__nav">
-          <button class="btn-icon btn-menu" onclick="setNavWrapDisplay()">
+        <div class="header__nav flex-row">
+          <button
+            class="
+              btn
+              padding-simple
+              flex-center
+              text-white
+              back-transparent back_hover-primary
+              border-transparent border_focus-white
+              btn-menu
+            "
+            onclick="setNavWrapDisplay()"
+          >
             <img src="img/menu.svg" alt="user" />
           </button>
-          <div class="btn-icon btn-user">
-            <a href="registration.html" class="a-icon">
+          <div>
+            <a
+              class="
+                btn
+                flex-center
+                padding-simple
+                text-white
+                back-transparent back_hover-primary
+                border-transparent border_focus-white
+                btn-user
+              "
+              href="registration.html"
+            >
               <img src="img/user.svg" alt="user"
             /></a>
           </div>
-          <div class="btn-icon btn-basket">
-            <a class="a-icon" href="cart.html">
+          <div>
+            <a
+              class="
+                btn
+                flex-center
+                padding-simple
+                text-white
+                back-transparent back_hover-primary
+                border-transparent border_focus-white
+                btn-cart
+              "
+              href="cart.html"
+            >
               <img src="img/basket.svg" alt="user" />
-              <div class="num_in_basket"><span>5</span></div>
+              <div class="num-in-cart"><span>5</span></div>
             </a>
           </div>
         </div>
@@ -73,7 +108,16 @@
 
       <div class="nav__wrap display-none" id="nav-wrap">
         <div>
-          <button class="nav__close btn-icon2" onclick="setNavWrapDisplay()">
+          <button
+            class="
+              btn
+              back-transparent
+              text-secondary
+              border-transparent
+              text_hover-primary
+            "
+            onclick="setNavWrapDisplay()"
+          >
             <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -82,73 +126,149 @@
             </svg>
           </button>
         </div>
-        <h2 class="nav__title">MENU</h2>
-        <h3 class="nav__heading">MAN</h3>
+        <div class="nav__title">MENU</div>
+        <div class="nav__heading text-primary">MAN</div>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Accessories</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Accessories</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Bags</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Bags</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Denim</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Denim</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">T-Shirts</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >T-Shirts</a
+            >
           </li>
         </ul>
 
-        <h3 class="nav__heading">WOMAN</h3>
+        <h3 class="nav__heading text-primary">WOMAN</h3>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Accessories</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Accessories</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Jackets & Coats</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Jackets & Coats</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Polos</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Polos</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">T-Shirts</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="#"
+              class="nav__link text-secondary text_hover-primary"
+              >T-Shirts</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Shirts</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Shirts</a
+            >
           </li>
         </ul>
 
-        <h3 class="nav__heading">KIDS</h3>
+        <h3 class="nav__heading text-primary">KIDS</h3>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Accessories</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Accessories</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Jackets & Coats</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Jackets & Coats</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Polos</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Polos</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">T-Shirts</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >T-Shirts</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Shirts</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Shirts</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Bags</a>
+            <a
+              class="link text-secondary text_hover-primary"
+              href="./catalog.html"
+              class="nav__link text-secondary text_hover-primary"
+              >Bags</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
       <div class="page_title">
-        <div class="page_title__container container">
-          <div><h1 class="title">NEW ARRIVALS</h1></div>
+        <div class="container flex-space-between">
+          <div><h1 class="page-title text-primary">NEW ARRIVALS</h1></div>
           <div class="breadcrumb__container">
-            <a class="breadcrumb__item" href="index.html">HOME</a>
-            <a class="breadcrumb__item" href="#">MEN</a>
-            <a class="breadcrumb__item current" href="#">NEW ARRIVALS </a>
+            <a class="link breadcrumb__item" href="index.html">HOME</a>
+            <a class="link breadcrumb__item" href="#">MEN</a>
+            <a class="link breadcrumb__item current" href="#">NEW ARRIVALS </a>
           </div>
         </div>
       </div>
@@ -183,13 +303,15 @@
               cutting-edge services. Completely visualize parallel core
               competencies rather than exceptional portals.
             </p>
-            <div class="product-description__price primary">$561</div>
+            <div class="product-description__price text-primary">$561</div>
             <div class="product-description__chooses">
               <div class="product-description__choose">CHOOSE SIZE</div>
               <div class="product-description__choose">CHOOSE COLOR</div>
               <div class="product-description__choose">QUANTITY</div>
             </div>
-            <button class="btn-secondary flex-center center-by-margin">
+            <button
+              class="btn btn_form-primary-light flex-center center-by-margin"
+            >
               <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -210,32 +332,33 @@
     </main>
     <footer class="footer">
       <div class="footer__subscribe">
-        <div class="light__block">
-          <div class="container subscribe__container">
-            <div class="subscribe__info">
-              <img class="round" src="./img/footer_woman.png" alt="info" />
-              <div>
+        <div class="light-block">
+          <div class="container subscribe__container flex-space-between">
+            <div class="subscribe__info flex-column margin-50">
+              <div class="flex-center margin-20">
+                <img class="round" src="./img/footer_woman.png" alt="info" />
+              </div>
+              <div class="text-black">
                 “Vestibulum quis porttitor dui! Quisque <br />viverra nunc mi,
                 <span style="font-style: italic"
                   >a pulvinar purus <br />condimentum“</span
                 >
               </div>
             </div>
-            <div class="subscribe__enter">
-              <div style="font-size: 24px; font-weight: bold">SUBSCRIBE</div>
-              <div>FOR OUR NEWLETTER AND PROMOTION</div>
-              <div>
-                <form class="subscribe__form" method="POST">
+            <div class="subscribe__enter flex-column-center">
+              <div class="subscribe__text1 text-black">SUBSCRIBE</div>
+              <div class="text-black">FOR OUR NEWLETTER AND PROMOTION</div>
+              <div class="flex-center margin-20">
+                <form class="subscribe__form flex-center">
                   <input
-                    class="subscribe__email"
+                    class="subscribe__email border-transparent"
                     placeholder="Enter Your Email"
                     type="email"
                   />
                   <input
-                    class="subscribe__btn"
+                    class="subscribe__btn btn back-primary back_focus-white"
                     type="submit"
                     value="Subscribe"
-                    autofocus
                   />
                 </form>
               </div>
@@ -243,11 +366,21 @@
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <div class="container copyright__container">
-          <div class="rights">© 2021 Brand All Rights Reserved.</div>
-          <div class="social">
-            <button>
+      <div class="copyright back-dark">
+        <div
+          class="container copyright__container flex-space-between padding-20"
+        >
+          <div class="rights flex-center text-white font-size-16">
+            © 2021 Brand All Rights Reserved.
+          </div>
+          <div class="social flex-row">
+            <button
+              class="
+                border-transparent
+                btn
+                back_hover-primary back_focus-primary
+              "
+            >
               <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -255,7 +388,13 @@
                 />
               </svg>
             </button>
-            <button>
+            <button
+              class="
+                border-transparent
+                btn
+                back_hover-primary back_focus-primary
+              "
+            >
               <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -263,7 +402,13 @@
                 />
               </svg>
             </button>
-            <button>
+            <button
+              class="
+                border-transparent
+                btn
+                back_hover-primary back_focus-primary
+              "
+            >
               <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -271,7 +416,13 @@
                 />
               </svg>
             </button>
-            <button>
+            <button
+              class="
+                border-transparent
+                btn
+                back_hover-primary back_focus-primary
+              "
+            >
               <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"

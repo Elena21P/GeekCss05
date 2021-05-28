@@ -13,16 +13,12 @@
   }
 
   .container {
-    padding: 0 10px;
     max-width: 740px;
   }
   .btn-user,
-  .btn-basket {
+  .btn-cart {
     display: none;
     padding: 0;
-  }
-  .header {
-    background-color: rgb(194, 123, 18);
   }
 
   .promo {
@@ -71,6 +67,7 @@
     align-items: center;
     .feature__block {
       padding: 30px 20px;
+      width: 100%;
     }
   }
 
