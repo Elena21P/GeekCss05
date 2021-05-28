@@ -6,6 +6,8 @@
   -ms-grid-rows: min-content;
       grid-template-rows: -webkit-min-content;
       grid-template-rows: min-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
   gap: 20px;
 }
 
@@ -87,23 +89,5 @@
   color: #f16d7f;
   font-size: 16px;
   font-weight: normal;
-}
-
-.fetured > h2 {
-  font-size: 30px;
-  font-weight: normal;
-  color: #000000;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.fetured > div {
-  color: #9f9f9f;
-  font-size: 14px;
-  font-weight: normal;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 50px;
 }
 /*# sourceMappingURL=product__card.css.map */

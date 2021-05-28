@@ -1,37 +1,59 @@
-$background-color-dark: #222224;
-$background-color-light: #f8f3f4;
-$background-color-light-card: #f3eeef;
 $color-primary: #f16d7f;
-$color-black: #222222;
-$color-text: #575757;
-$color-secondary: #6f6e6e;
-$color-intut-border: #a4a4a4;
-
-$font-stack: Lato;
-
-.footer {
-  background-color: $background-color-dark;
+.copyright__container {
+  .social {
+    & > button {
+      margin: 0 2px;
+      padding: 3px 6px;
+    }
+  }
 }
 
-.copyright__container {
-  color: #f8f8f8;
-  font-weight: normal;
-  font-size: 16px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  button {
-    font-size: 16px;
+.footer__subscribe {
+  background-image: url("../../img/subscribe_fon.png");
+  background-position: left;
+  background-size: cover;
+  background-position: center;
+  .subscribe__info {
     text-align: center;
-    padding: 5px;
-    margin: 15px 0px;
-    border: none;
-    svg {
-      vertical-align: middle;
+    div {
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+  .subscribe__enter {
+    font-size: 18px;
+    font-weight: normal;
+    .subscribe__text1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .subscribe__form {
+      input[type="email"]:focus {
+        background-color: #f8f8f8;
+        border-color: $color-primary;
+        transition: 1s;
+      }
+
+      .subscribe__email,
+      .subscribe__btn {
+        outline: none;
+        border: 2px;
+        padding: 20px;
+        border: solid 1px;
+      }
+      .subscribe__email {
+        border-radius: 20px 0 0px 20px;
+        width: 60%;
+        border-color: #e1e1e1;
+        background-color: #e1e1e1;
+      }
+
+      .subscribe__btn {
+        transition: 1s;
+        border-radius: 0px 20px 20px 0;
+        border-color: $color-primary;
+      }
     }
   }
 }

@@ -1,6 +1,4 @@
-$background-color-dark: #222222;
-$background-color-light: #f8f3f4;
-$background-color-light-card: #f3eeef;
+$background-color-dark: #222224;
 $color-primary: #f16d7f;
 $color-black: #000000;
 $color-text: #575757;
@@ -41,6 +39,14 @@ body {
   flex-direction: row;
 }
 
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -52,49 +58,58 @@ body {
   padding: 5px;
 }
 
-.light__block {
+.padding-20 {
+  padding: 20px;
+}
+
+.btn_form-primary {
+  background-color: $color-primary;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  border: transparent solid 1px;
+  transition: 1s;
+  padding: 15px 30px;
+  &:hover,
+  &:focus {
+    background-color: white;
+    color: $color-primary;
+    cursor: pointer;
+    border: $color-primary solid 1px;
+  }
+}
+
+.margin-20 {
+  margin: 20px;
+}
+
+.margin-50 {
+  margin: 50px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.light-block {
   background: rgba(255, 255, 255, 0.6);
   width: 100%;
   height: 100%;
   position: relative;
   top: 0;
 }
-// .btn-secondary {
-//   border: solid 1px $color-primary;
-//   background-color: transparent;
-//   color: $color-primary;
-//   padding: 15px 25px;
-//   font-size: 16px;
-//   transition: 1s;
-//   :hover {
-//     color: white;
-//     background-color: $color-primary;
-//   }
-// }
 
-// button:hover {
-//   cursor: pointer;
-// }
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.dark-block {
+  background: rgba(10, 10, 10, 0.6);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
 }
 
 .center-by-margin {
   margin: 0 auto;
-}
-
-.block-big-margin-y {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.primary-on-hover {
-  &:hover {
-    color: $color-primary;
-  }
 }
 
 .round {
@@ -108,6 +123,7 @@ body {
 }
 
 .btn {
+  box-sizing: border-box;
   &:hover {
     cursor: pointer;
   }
@@ -122,7 +138,9 @@ body {
 
 .back-transparent {
   background-color: transparent;
-  
+}
+.back-dark {
+  background-color: $background-color-dark;
 }
 
 .back-white {
@@ -130,11 +148,23 @@ body {
 }
 
 .back-primary {
-  background-color: white;
+  background-color: $color-primary;
+  color: white;
 }
 
 .back_hover-primary:hover {
   background-color: $color-primary;
+  color: white;
+}
+
+.back_focus-primary:focus {
+  background-color: $color-primary;
+  color: white;
+}
+
+.back_focus-white:focus {
+  background-color: white;
+  color: $color-primary;
 }
 
 .text-white {
@@ -149,20 +179,17 @@ body {
   color: $color-secondary;
 }
 
-.text- {
-  color: black;
-}
-
 .text-primary {
   color: $color-primary;
 }
 
 .text_hover-primary {
-  color: $color-primary;
-}
-
-.text_hover-white {
-  color: white;
+  &:hover {
+    color: $color-primary;
+  }
+  &:focus {
+    color: $color-primary;
+  }
 }
 
 .border-transparent {
@@ -185,4 +212,27 @@ body {
     outline: none;
     border-radius: 5px;
   }
+}
+
+.text-title {
+  font-size: 24px;
+}
+
+.text-title-bold {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.block-title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.block-text {
+  font-size: 14px;
+  font-weight: normal;
+  color: #9f9f9f;
+  text-align: center;
 }

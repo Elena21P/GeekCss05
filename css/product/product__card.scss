@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
   gap: 20px;
 
   .product__item {
@@ -68,23 +70,5 @@
         font-weight: normal;
       }
     }
-  }
-}
-.fetured {
-  & > h2 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #000000;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  & > div {
-    color: #9f9f9f;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
   }
 }

@@ -34,7 +34,7 @@ export function getItems(count,imgFolder) {
       </div>
 
       <div class="product__info">
-        <div class="product__name">${item.name}</div>
+        <div class="product__name"><a class="link text-black" href="./product.html">${item.name}</a></div>
         <div class="product__text">${item.text}</div>
         <div class="product__price">$${item.price.toFixed(2)}</div>
       </div>

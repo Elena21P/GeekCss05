@@ -9,7 +9,6 @@ header .nav__wrap {
           box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
   font-weight: normal;
   font-size: 14px;
-  color: #6f6e6e;
   padding: 15px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -25,16 +24,15 @@ header .nav__wrap div:first-child {
   padding-bottom: 0;
 }
 
-header .nav__wrap h2 {
+header .nav__wrap .nav__title {
   font-weight: bold;
-  color: #000000;
   font-size: 16px;
+  padding-bottom: 8px;
 }
 
-header .nav__wrap h3 {
+header .nav__wrap .nav__heading {
   font-weight: normal;
   font-size: 14px;
-  color: #f16d7f;
 }
 
 header .nav__wrap ul {
@@ -44,16 +42,10 @@ header .nav__wrap ul {
 }
 
 header .nav__wrap a {
-  color: #6f6e6e;
   text-decoration: none;
 }
 
-header .nav__wrap a:hover {
-  color: #f16d7f;
-}
-
 header .nav__wrap a:focus {
-  color: #f16d7f;
   outline: none;
 }
 /*# sourceMappingURL=nav__wrap.css.map */
