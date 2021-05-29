@@ -6,6 +6,12 @@ $color-primary: #f16d7f;
     align-items: center;
     justify-content: space-between;
     background-color: #f7f7f7;
+    z-index: 0;
+    height: 777px;
+    background-image: url(../../img/product-page/slide_img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
     .slide__btn {
       margin: 0;
       padding: 0;
@@ -16,11 +22,20 @@ $color-primary: #f16d7f;
     .slide__btn:hover {
       color: $color-primary;
     }
+    & > img {
+      min-width: 100px;
+    }
   }
 }
 
 .product-description {
-  padding: 60px 200px 60px 200px;
+  & > div {
+    max-width: 640px;
+    margin: 50px auto;
+  }
+  & button {
+    margin-top: 50px;
+  }
   border: solid #eaeaea 1px;
   background-color: rgb(255, 255, 255);
   margin: -50px 0 0 0;
@@ -28,7 +43,6 @@ $color-primary: #f16d7f;
   vertical-align: middle;
   text-align: center;
   font-size: 14px;
-  color: #5e5e5e;
   font-weight: 300;
   & > * {
     margin-top: 50px;
@@ -76,8 +90,8 @@ $color-primary: #f16d7f;
     padding: 10px;
     &::after {
       content: url("../../img/down.svg");
-      vertical-align: top;
-      padding: 10px;
+      vertical-align: middle;
+      padding-left: 8px;
     }
   }
 }

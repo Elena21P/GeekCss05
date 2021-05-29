@@ -1,4 +1,16 @@
-.form-reg {
+.reg__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reg__container .form-reg {
   margin-top: 50px;
   margin-bottom: 50px;
   display: -webkit-box;
@@ -14,19 +26,19 @@
   font-weight: 300;
 }
 
-.form-reg button {
+.reg__container .form-reg button {
   margin-top: 30px;
 }
 
-.form-reg .gender-radio label {
+.reg__container .form-reg .gender-radio label {
   font-size: 13px;
 }
 
-.form-reg .pass-note {
+.reg__container .form-reg .pass-note {
   color: #b1b1b1;
 }
 
-.perks__container {
+.reg__container .perks__container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -38,16 +50,16 @@
   margin-right: 50px;
 }
 
-.perks__container ul {
+.reg__container .perks__container ul {
   list-style: none;
 }
 
-.perks__container ul li {
+.reg__container .perks__container ul li {
   margin-top: 10px;
   position: relative;
 }
 
-.perks__container ul li:before {
+.reg__container .perks__container ul li:before {
   position: absolute;
   top: 2px;
   left: 0;

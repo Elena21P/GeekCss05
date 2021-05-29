@@ -7,6 +7,10 @@
   width: 30%;
 }
 
+.feature .feature__block div {
+  padding: 10px 0 10px 0;
+}
+
 .feature .feature__text {
   color: #f8f8f8;
   font-weight: 100;
@@ -17,9 +21,5 @@
   color: #f8f8f8;
   font-weight: normal;
   font-size: 20px;
-}
-
-.feature .feature__block div {
-  padding: 10px 0 10px 0;
 }
 /*# sourceMappingURL=feature.css.map */

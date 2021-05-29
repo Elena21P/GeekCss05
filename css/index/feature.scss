@@ -3,6 +3,9 @@
   padding: 50px 0px;
   .feature__block {
     width: 30%;
+    div {
+      padding: 10px 0 10px 0;
+    }
   }
   .feature__text {
     color: #f8f8f8;
@@ -14,9 +17,5 @@
     color: #f8f8f8;
     font-weight: normal;
     font-size: 20px;
-  }
-
-  .feature__block div {
-    padding: 10px 0 10px 0;
   }
 }

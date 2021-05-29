@@ -13,7 +13,11 @@
   }
 
   .container {
-    max-width: 361px;
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 5px;
   }
 
   .page_title {
@@ -94,13 +98,102 @@
       margin: 25px 0;
     }
   }
-
+  .filter__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .filter__left {
+      .filter__block {
+        .filter__summary {
+          .filter__text {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .page_title {
+    .page_title__block {
+      display: flex;
+      flex-direction: column;
+      .breadcrumb__container {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .product__container {
+    .slide {
+      height: 624px;
+    }
+  }
+  .product-description {
+    & > div {
+      max-width: 330px;
+      margin: 50px auto;
+    }
+    .product-description__title {
+      font-size: 18px;
+    }
+    .product-description__choose {
+      font-size: 10px;
+    }
+    margin: 0;
+    border-left: none;
+    border-right: none;
+  }
   .feature__container {
     display: grid;
     grid-template-columns: 1fr;
     .feature__block {
-      padding: 30px 20px;
       width: 100%;
+    }
+  }
+  .shopping {
+    display: flex;
+    flex-direction: column;
+    .shopping__cards {
+      .card {
+        font-size: 14px;
+        height: 188px;
+        width: 358px;
+        & > img {
+          width: 188px;
+        }
+        .form {
+          padding: 5px;
+          .header {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .shopping__block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .shipping__form {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .shopping__total {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .reg__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-reg {
+      width: 100%;
+    }
+    .perks__container {
+      font-size: 16px;
+
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
 
@@ -108,5 +201,22 @@
     .product__item:nth-child(2) {
       display: none;
     }
+  }
+
+  .btn_form-secondary {
+    font-size: 12px;
+  }
+
+  .btn_form-secondary {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  .btn_form-primary-light {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  .btn_form-primary {
+    font-size: 12px;
+    padding: 10px 10px;
   }
 }

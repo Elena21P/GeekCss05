@@ -263,7 +263,7 @@
     </header>
     <main>
       <div class="page_title">
-        <div class="container flex-space-between">
+        <div class="container page_title__block">
           <div><h1 class="page-title text-primary">NEW ARRIVALS</h1></div>
           <div class="breadcrumb__container">
             <a class="link breadcrumb__item" href="index.html">HOME</a>
@@ -278,10 +278,8 @@
             <div class="filter__block">
               <details>
                 <summary class="filter__summary text-black">
-                  FILTER<svg
-                    style="width: 24px; height: 24px"
-                    viewBox="0 0 24 24"
-                  >
+                  <span class="filter__text">FILTER</span>
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
                       d="M3,13H15V11H3M3,6V8H21V6M3,18H9V16H3V18Z"
@@ -320,63 +318,72 @@
               </details>
             </div>
           </div>
-          <div class="filter__groups group__block">
-            <details class="trending__block">
-              <summary class="">
-                TRENDING NOW<svg
-                  style="width: 24px; height: 24px"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                  />
-                </svg>
-              </summary>
-            </details>
-            <div class="size__block">
-              <details class="">
-                <summary class="">
-                  SIZE<svg
-                    style="width: 24px; height: 24px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                    />
-                  </svg>
-                </summary>
-                <ul>
-                  <li class="size__item">
-                    <input type="checkbox" id="size-xs" />
-                    <label for="size-xs">XS</label>
-                  </li>
-                  <li class="size__item">
-                    <input type="checkbox" id="size-s" />
-                    <label for="size-s">S</label>
-                  </li>
-                  <li class="size__item">
-                    <input type="checkbox" id="size-m" />
-                    <label for="size-m">M</label>
-                  </li>
-                  <li class="size__item">
-                    <input type="checkbox" id="size-l" />
-                    <label for="size-l">L</label>
-                  </li>
-                </ul>
-              </details>
+          <div class="filter__groups">
+            <div class="group__block">
+              <div class="trending__block">
+                <details class="trending__details">
+                  <summary class="">
+                    TRENDING NOW<svg
+                      style="width: 24px; height: 24px"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                      />
+                    </svg>
+                  </summary>
+                </details>
+              </div>
+              <div class="size__block">
+                <details class="size__details">
+                  <summary class="">
+                    SIZE<svg
+                      style="width: 24px; height: 24px"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                      />
+                    </svg>
+                  </summary>
+                  <ul>
+                    <li class="size__item">
+                      <input type="checkbox" id="size-xs" />
+                      <label for="size-xs">XS</label>
+                    </li>
+                    <li class="size__item">
+                      <input type="checkbox" id="size-s" />
+                      <label for="size-s">S</label>
+                    </li>
+                    <li class="size__item">
+                      <input type="checkbox" id="size-m" />
+                      <label for="size-m">M</label>
+                    </li>
+                    <li class="size__item">
+                      <input type="checkbox" id="size-l" />
+                      <label for="size-l">L</label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+              <div class="price__block">
+                <details class="price__details">
+                  <summary class="">
+                    PRICE<svg
+                      style="width: 24px; height: 24px"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                      />
+                    </svg>
+                  </summary>
+                </details>
+              </div>
             </div>
-            <details class="price__block">
-              <summary class="">
-                PRICE<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                  />
-                </svg>
-              </summary>
-            </details>
           </div>
         </div>
         <div class="fetured">
@@ -431,8 +438,9 @@
             </div>
             <div class="feature__title">Free Delivery</div>
             <div class="feature__text">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+              Worldwide delivery on all. Authorit tively morph
+              <br />
+              next-generation innov tion with extensive models.
             </div>
           </div>
           <div class="feature__block flex-column-center">
@@ -453,8 +461,9 @@
             </div>
             <div class="feature__title">Sales & discounts</div>
             <div class="feature__text">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+              Worldwide delivery on all. Authorit tively morph
+              <br />
+              next-generation innov tion with extensive models.
             </div>
           </div>
           <div class="feature__block flex-column-center">
@@ -475,8 +484,9 @@
             </div>
             <div class="feature__title">Quality assurance</div>
             <div class="feature__text">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+              Worldwide delivery on all. Authorit tively morph
+              <br />
+              next-generation innov tion with extensive models.
             </div>
           </div>
         </div>
